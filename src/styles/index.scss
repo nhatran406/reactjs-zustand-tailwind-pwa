@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+@import "sass/_animations.scss";
+@import "sass/_buttons.scss";
+@import "sass/_headings.scss";
+@import "sass/_typography.scss";
+
+// @import "tailwind.scss";
+
+/* ROOT ---------------------------------------- */
+:root {
+	font-family: "Quicksand", Inter, system-ui, Avenir, Helvetica, Arial,
+		sans-serif;
+}
+
+/* SHELL ---------------------------------------- */
+body {
+	background: #e7fbff;
+	background: -webkit-linear-gradient(
+		0deg,
+		#e7fbff 0%,
+		#bdf4ff 50%,
+		#afecff 100%
+	);
+	background: linear-gradient(0deg, #e7fbff 0%, #bdf4ff 50%, #afecff 100%);
+}
