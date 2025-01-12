@@ -31,7 +31,14 @@ jobs:
         name: Install dependencies
         run: |
           bun install
-      - id: test
-        name: Run test
+      - id: install-playwright-browsers
+        name: Install Playwright Browsers
+        run: npx playwright install --with-deps
+      - id: test-unit
+        name: Run unit test
         run: |
-          bun test
+          bun test:unit
+      - id: test-e2e
+        name: Run test E2E
+        run: |
+          bun test:e2e
